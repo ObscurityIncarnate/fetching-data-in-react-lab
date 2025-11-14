@@ -60,16 +60,18 @@ const StarshipSearch  = ({setShips})=>{
                 <button type="submit">Search</button>
                 <section id="suggestions">
 
-                    {searchTerm.map((suggestion, index)=>{
+                    
+                </section>
+            
+            </form> 
+            <h4>Search Suggestions</h4>
+            {searchTerm.map((suggestion, index)=>{
                         return(
                             <div key={index}>
                                 <p>{suggestion}</p>
                             </div>
                         )
                     })}
-                </section>
-            
-            </form> 
             <StarshipList ships={searchSuggestions}/>        
         
         
